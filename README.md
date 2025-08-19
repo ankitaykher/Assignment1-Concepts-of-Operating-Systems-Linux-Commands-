@@ -15,6 +15,7 @@ mkdir LinuxAssignment     // create directory if it doesn’t exist
 cd LinuxAssignment       // navigate into directory
 
 File Management:
+
 b) Inside the "LinuxAssignment" directory, create a new file named "file1.txt". Display its
 contents
 cd LinuxAssignment        // change directory 
@@ -23,12 +24,14 @@ cat > file1.txt         //open file for writing
 cat file1.txt          //display file contents
 
 c) Directory Management:
+
 a. Create a new directory named "docs" inside the "LinuxAssignment" directory.
 cd LinuxAssignment    // change directory 
 makdir docs         // make directory with name docs
 
 
 d)Copy and Move Files:
+
 a. Copy the "file1.txt" file into the "docs" directory and rename it to "file2.txt".
 touch file1.txt    // create an empty file
 echo "This is file1 content" > file1.txt  // Write the string "This is file1 content" into 'file1.txt'
@@ -38,6 +41,7 @@ ls docs                                // List the contents of the 'docs' direct
 
 
 e) Permissions and Ownership:
+
 a. Change the permissions of "file2.txt" to allow read, write, and execute permissions for
 the owner and only read permissions for others. Then, change the owner of "file2.txt" to
 the current user.
@@ -51,6 +55,7 @@ sudo chown $USER file2.txt  // Change the owner to the current user
 ls -l file2.txt  # Verify the ownership change
 
 f) Final Checklist:
+
 a. Finally, list the contents of the "LinuxAssignment" directory and the root directory to
 ensure that all operations were performed correctly.
 
@@ -59,6 +64,7 @@ ls -l ~/LinuxAssignment  //List detailed contents of the 'LinuxAssignment' direc
 ls -l /                 //List detailed contents of the root directory
 
 g)File Searching:
+
 a. Search for all files with the extension ".txt" in the current directory and its subdirectories.
 cd ~/LinuxAssignment  // Change to the directory where you want to search
 find . -name "*.txt"  // Search for all files with the .txt extension starting from the current directory
@@ -75,11 +81,13 @@ o/p Line 1
     Line 3
 
 h) System Information:
+
 a. Display the current system date and time.
 date   //showing date and time with this command
 
 
 i) Networking:
+
 a. Display the IP address of the system.
 hostname -I  //Displays the IP address on Linux
 
@@ -87,6 +95,7 @@ b. Ping a remote server to check connectivity (provide a remote server address t
 ping -c 4 google.com  // Ping google.com and send 4 packets
 
 j)File Compression:
+
 a. Compress the "docs" directory into a zip file. 
 zip -r docs.zip docs  // Compress the 'docs' directory into 'docs.zip'
 zip                  // This is  used to create zip files.
@@ -102,6 +111,7 @@ docs.zip                        // zip file you want to extract.
 -d extracted_docs              //  This option specifies the directory where the contents of the zip file will be extracted
 
 k) File Editing:
+
 a. Open the "file1.txt" file in a text editor and add some text to it.
 nano file1.txt            // Open 'file1.txt' in the nano text editor
 nano                     //  This is a terminal-based text editor that is simple to use.
