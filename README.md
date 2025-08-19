@@ -38,7 +38,7 @@ makdir docs         // make directory with name docs
 
 
 
-d)Copy and Move Files:
+d) Copy and Move Files:
 
 a. Copy the "file1.txt" file into the "docs" directory and rename it to "file2.txt".
 touch file1.txt    // create an empty file
@@ -79,7 +79,7 @@ ensure that all operations were performed correctly.
 
 cd                        //Navigate to your home directory, where 'LinuxAssignment' is located
 
-ls -l ~/LinuxAssignment  //List detailed contents of the 'LinuxAssignment' directory
+ls -l  /LinuxAssignment  //List detailed contents of the 'LinuxAssignment' directory
 
 ls -l /                 //List detailed contents of the root directory
 
