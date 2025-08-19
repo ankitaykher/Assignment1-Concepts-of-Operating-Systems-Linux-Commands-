@@ -1,4 +1,4 @@
-# Assignment1-Concepts-of-Operating-Systems-Linux-Commands-
+<img width="782" height="376" alt="image" src="https://github.com/user-attachments/assets/3d1d9650-ee35-424a-805e-977956c6af88" /># Assignment1-Concepts-of-Operating-Systems-Linux-Commands-
 Name: Ankita Yatin Kher
 Institute: CDAC Mumbai
 
@@ -112,7 +112,9 @@ date   //showing date and time with this command
 i) Networking:
 
 a. Display the IP address of the system.
-hostname -I  //Displays the IP address on Linux
+we can check the IP address two ways
+1)ipconfig      //Display the IP address of the system.
+2)hostname -I  //Displays the IP address on Linux
 
 b. Ping a remote server to check connectivity (provide a remote server address to ping).
 ping -c 4 google.com  // Ping google.com and send 4 packets
