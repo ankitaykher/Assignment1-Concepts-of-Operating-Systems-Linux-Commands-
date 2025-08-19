@@ -34,7 +34,7 @@ touch file1.txt    // create an empty file
 echo "This is file1 content" > file1.txt  // Write the string "This is file1 content" into 'file1.txt'
 cat file1.txt                            // Display the contents of 'file1.txt' to verify the content
 cp file1.txt docs/file2.txt             //Copy 'file1.txt' to the 'docs' directory and rename it as 'file2.txt'
-ls docs                                 // List the contents of the 'docs' directory to verify the copy
+ls docs                                // List the contents of the 'docs' directory to verify the copy
 
 
 e) Permissions and Ownership:
