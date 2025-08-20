@@ -135,6 +135,8 @@ docs              // directory which we use for compressing
 ls               // List the files to verify that docs.zip exists
 
 b. Extract the contents of the zip file into a new directory.
+mkdir  docs         // make directory 
+
 unzip docs.zip -d extracted_docs  // Extract the contents of 'docs.zip' to 'extracted_docs'
 
 unzip                             //extract files from a .zip archive
@@ -168,9 +170,76 @@ cat file1.txt                            // Display the updated contents of 'fil
 4) While setting permissions with chmod, I first tried chmod 777 and gave unnecessary permissions. Later, I corrected it to chmod 744 to follow the requirement.
 5)While using nano editor, I accidentally replaced the whole file content and struggled with saving/exiting. After a few tries, I learned the proper shortcut (CTRL+O and CTRL+X).
 
+
+Problem 2: Read the instructions carefully and answer accordingly. If there is any need to insert some data then do that as well.
+a. Suppose you have a file named "data.txt" containing important information. Display the first 10 lines of this file to quickly glance at its contents using a comman
+
+ls                               // list the file check for data.txt file
+head data.txt                  //display the first command file
+
+b. Now, to check the end of the file for any recent additions, display the last 5 lines of "data.txt" using another command
+ls                         // check file
+tail -n5 data.txt         //with this command you can display last five lines
+
+c. In a file named "numbers.txt," there are a series of numbers. Display the first 15 lines of this file to analyze the initial data set.
+
+touch numbers.txt                                                               // make a file 
+echo -e "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16" > numbers.txt  // via echo comand you can add 1 to 15 lines in numbers.txt file
+head -n 15 numbers.txt                                                         // you can see the save 15 command which you add  txt file
+
+
+d. To focus on the last few numbers of the dataset, display the last 3 lines of "numbers.txt".
+ls // check file
+
+tail -n3 nubers.txt       // last 3 line display
+
+
+e. Imagine you have a file named "input.txt" with text content. Use a command to translate all lowercase letters to uppercase in "input.txt" and save the modified text in a new file named "output.txt."
+
+touch input.txt                                // create file 
+vi input.txt                                  // use vi editor for add content
+esc                                         // for exit
+wq                                         // save and quit from editor 
+cat                                      // display content which i add on input.txt file
+tr 'a-z' 'A-Z' < input.txt > output.txt //  tr for use character translate 
+'a-z'                                  // which letter you need to convert 
+'A-Z'                                 //uppercase letters to convert to 
+< input.txt                          // This takes the content from input.txt.
+> output.txt                        // This saves the converted content into output.txt.
+
+
+
+f. In a file named "duplicate.txt," there are several lines of text, some of which are   duplicates. Use a command to display only the unique lines from "duplicate.txt."
+
+
+cd LinuxAssignment            // Navigate to the LinuxAssignment dir
+
+touch duplicate.txt          //Create an empty file named duplicate.txt
+
+Ankita is a unique girl      // add content
+this is the duplicate data
+this is the duplicate data
+esc
+
+wq // save and quit
+
+sort duplicate.txt | uniq -u   // Sort the content of duplicate.txt and pipe it to uniq -u to display only unique lines that occur once
+
+g. In a file named "fruit.txt," there is a list of fruits, but some fruits are repeated. Use a command to display each unique fruit along with the count of its occurrences in "fruit.txt."
+
+touch frouit.txt            //create file
+
+vi fruit.txt               // add content
+
+sort fruit.txt | uniq -c // Use a command to display each unique fruit along with the count of its occurrences in "fruit.txt."
+
+
+
+
 #Repository Contents
 1) Assignment1_Solution.pdf → Detailed documentation with commands and outputs
 2) README.md → challenges, and repository note
+   
 
 
 
